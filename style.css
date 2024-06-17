@@ -112,6 +112,7 @@ img{
 }
 
 #display_message{  
+z-index: 100;
 background-color: black;
 background-image:none;
 position: absolute;

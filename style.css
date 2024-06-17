@@ -115,7 +115,7 @@ img{
 background-color: black;
 background-image:none;
 position: absolute;
-left: 25vw;
+left: 15vw;
 top: 10vh;
 border: solid rgb(144, 235, 7) 5px; 
 display: flex;
@@ -124,18 +124,19 @@ padding: 1vw;
 border-radius: 0.6vw;
 color:white;
 font-family: "Lucida Console", "Courier New", monospace;
-font-size:1.2vw;
-}
-
-#arrow1,#arrow2{
-    font-size: 2vw;
-    margin-left: 1rem;
-    margin-right: 1rem;
+font-size:2vw;
 }
 
 #display_message p{
     background-image:none;
     padding: 1rem;
+}
+
+
+#arrow1,#arrow2{
+    font-size: 2vw;
+    margin-left: 1rem;
+    margin-right: 1rem;
 }
 
 #controls{
@@ -227,7 +228,6 @@ button[disabled],button:disabled:hover{
   }
 
   @media only screen and (max-width: 800px) {
-    
     #play_area{
         height:40vh;
     }
@@ -260,6 +260,13 @@ button[disabled],button:disabled:hover{
   }
 
   @media only screen and (max-width: 700px) {
+    #display_message{  
+        margin-left: -10vw;
+        }
+        
+        #display_message p{
+            padding: 0.8rem;
+        }
     .buttn{
         border-radius:0.5rem;
         padding-left: 0.2rem;
@@ -295,7 +302,13 @@ button[disabled],button:disabled:hover{
   }
 
   @media only screen and (max-width: 500px) {
-
+    #display_message{  
+    margin-left: -10vw;
+    }
+    
+    #display_message p{
+        padding: 0.6rem;
+    }
     #play_area{
         height:20vh;
     }
@@ -316,6 +329,16 @@ button[disabled],button:disabled:hover{
   }
 
   @media only screen and (max-width: 400px) {
+    #display_message{  
+        margin-left: -15vw;
+        }
+        
+        #display_message p{
+            padding: 0.6rem;
+        }
+        #play_area{
+            height:20vh;
+        }
     #play_area{
         height:20vh;
     }

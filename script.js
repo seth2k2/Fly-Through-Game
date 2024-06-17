@@ -122,7 +122,7 @@ let playHeight=document.getElementById('play_area').offsetHeight;
   function mobileControls(){
     let shipPos;
     const playTop = ship.getBoundingClientRect().top+10;
-    let step=Math.floor(playPos.width/100);
+    let step=Math.floor(playPos.width/50);
     let y=ship.offsetTop;  
     controlUp.addEventListener("click", function (){
       if(end){

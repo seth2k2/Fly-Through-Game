@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Fly Through</title>
+</head>
+<body>
+    <div id="top">
+        <div id="buttons">
+            <button class="buttn" id="startbuttn" disabled onclick="mobileControls();shipMove();timer1();timer2();setCometY();displayComet();this.disabled=true;">Start</button>
+            <button class="buttn" id="restartbuttn" disabled onclick="reset()">Restart</button>
+        </div>
+        <div id="scores">
+            <font>Score:</font>
+            <section id="score">0</section>
+        </div>
+    </div>
+    <div id="play_area">
+        <div id='display_message'><span><p>Welcome to Fly Through</p><p>Make your way through the space avoiding comets</p><p>Use arrow keys to move the ship <i class="fa-solid fa-arrow-up" id="arrow1"></i><i class="fa-solid fa-arrow-down" id="arrow2"></i></p></span>
+            <i id="close" class='fas fa-times' onclick="welcome()"></i>
+        </div>
+        <img src="images/comet.gif" id="comet1" style="right:-1;" class="comet">
+        <img src="images/comet.gif" id="comet2" style="right:0;" class="comet">
+        <img src="images/comet.gif" id="comet3" style="right:-1;" class="comet">
+        <img src="images/comet.gif" id="comet4" style="right:0;" class="comet">
+        <img src="images/comet.gif" id="comet5" style="right:-1;" class="comet">
+        <img src="images/ship.gif" id="ship">
+        <img src="images/fire.gif" id="fire">
+    </div>
+    <div id="controls">
+        <button id="control1" disabled><i class="fa-solid fa-arrow-up" style="background-image: none;background-color: transparent;"></i></button>
+        <button id="control2" disabled><i class="fa-solid fa-arrow-down" style="background-image: none;background-color: transparent;"></i></button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

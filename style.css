@@ -1,0 +1,375 @@
+* {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    background-image: url("images/stars.jpg");
+    overflow: hidden;
+    touch-action: manipulation;
+  }
+
+#top{
+    opacity:40%;
+    display: flex;
+}
+
+#buttn{
+    width:30%;
+    margin-top:0.5rem;
+}
+
+#scores{
+    color: rgb(144, 235, 7);
+    display: flex;
+    justify-content: flex-end;
+    width: 40%;
+    margin: auto;
+    margin-top: 1rem;
+    font-size: 3vw;
+}
+
+.buttn{
+    background-image:none;
+    color: chartreuse;
+    font-size: 3vw;
+    border:solid white 0.3rem;
+    border-radius: 1rem;
+    margin-left: 15%;
+    margin-bottom: 1rem;
+    margin-top: 1vh;
+    padding-left: 0.2rem;
+    padding-right: 0.5rem;
+}
+
+.buttn:hover{
+    background-color: white;
+    color: black;
+    cursor: pointer;
+}
+
+#buttons{
+    width: 35vw;
+    display: flex;
+}
+
+font{
+    margin-left: 7rem;
+}
+
+section{
+    margin-left: 1rem;
+    color: white;
+}
+
+img{
+    background-image:none;
+    position: absolute;
+    background-color:transparent;
+}
+
+#play_area{
+    background-image:none;
+    position: relative;
+    background-color: rgb(177, 177, 177);
+    margin: auto;
+    width: 90%;
+    border: solid rgb(144, 235, 7) 5px;
+    height:80vh;
+    overflow: hidden;
+}
+
+
+#ship{
+    opacity:50%;
+    height: 5rem;
+    padding: 1vw ;
+}
+
+#fire{
+    height: 10rem;
+    margin-top: -10vh;
+    width: 25vw;
+    margin-left: -5vw;
+    visibility: hidden;
+}
+
+.comet{
+    background-image:none;
+    height:3rem;
+    visibility:hidden;
+}
+
+#close{
+    margin-left:10px;
+    color: red;
+    font-size: 2vw;
+    border: solid red 3px;
+    height: 1.8vw;
+    padding:0.3rem;
+}
+
+#close:hover{
+    cursor: pointer;
+}
+
+#display_message{  
+background-color: black;
+background-image:none;
+position: absolute;
+left: 25vw;
+top: 10vh;
+border: solid rgb(144, 235, 7) 5px; 
+display: flex;
+justify-content: baseline;
+padding: 1vw;
+border-radius: 0.6vw;
+color:white;
+font-family: "Lucida Console", "Courier New", monospace;
+font-size:1.2vw;
+}
+
+#arrow1,#arrow2{
+    font-size: 2vw;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+#display_message p{
+    background-image:none;
+    padding: 1rem;
+}
+
+#controls{
+    visibility: hidden;
+    margin: auto;
+    z-index: 50;
+    display: flex;
+    width: 80vw;
+    justify-content: space-between;
+    margin-top: 10vw;
+}
+
+#control1,#control2{
+    background-image: none;
+    background-color: black;
+    color: rgb(144, 235, 7);
+    font-size: 7vw;
+    border: solid white 0.5vw;
+    padding: 1rem;
+    border-radius: 60px;
+    width: 5rem;
+}
+
+#control1:hover,#control2:hover{
+    background-color: white;
+    color: black;
+    cursor: pointer;
+}
+
+button:disabled,
+button[disabled],button:disabled:hover{
+  border: 1px solid #999999;
+  background-color: #cccccc;
+  color: #666666;
+}
+
+@media only screen and (max-width: 1500px) {
+    #play_area{
+        height:70vh;
+    }
+    #ship{
+        height:4.5rem;
+    }
+    .comet{
+        height:2.5rem;
+    }
+}
+
+@media only screen and (max-width: 1300px) {
+    #controls{
+        visibility: visible;
+    }
+    #play_area{
+        height:50vh;
+    }
+
+    #ship{
+        height:4rem;
+    }
+    .comet{
+        height:2rem;
+    }
+
+}
+
+@media only screen and (max-width: 1000px) {
+    #play_area{
+        height:45vh;
+    }
+
+    #ship{
+        height:4rem;
+    }
+    .comet{
+        height:2rem;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    #play_area{
+        height:40vh;
+    }
+    #ship{
+        height:3.5rem;
+    }
+    .comet{
+        height:2rem;
+    }
+  }
+
+  @media only screen and (max-width: 800px) {
+    
+    #play_area{
+        height:40vh;
+    }
+    #ship{
+        height:3rem;
+    }
+    .comet{
+        height:1.5rem;
+    }
+  }
+
+  @media only screen and (min-width: 900px) {
+    #control1,#control2{
+        width: 12rem;
+    }   
+  }
+
+  @media only screen and (min-width: 800px) {
+    #control1,#control2{
+        width: 8rem;
+    }
+    
+  }
+
+    @media only screen and (min-width: 700px) {
+    #control1,#control2{
+        width: 7rem;
+    }
+    
+  }
+
+  @media only screen and (max-width: 700px) {
+    .buttn{
+        border-radius:0.5rem;
+        padding-left: 0.2rem;
+        padding-right: 0.2rem;
+    }
+
+    #control1,#control2{
+        width: 7rem;
+    }
+
+    #play_area{
+        height:30vh;
+    }
+
+    #ship{
+        height:2.5rem;
+    }
+    .comet{
+        height:1rem;
+    }
+    #display_message{ 
+        top:5vw;
+        left: 20vw;
+    }
+    #fire{
+        height: 8rem;
+        margin-top: -8vh;
+        width: 30vw;
+        margin-left: -3vw;
+        visibility: hidden;
+    }
+
+  }
+
+  @media only screen and (max-width: 500px) {
+
+    #play_area{
+        height:20vh;
+    }
+
+    #ship{
+        height:2rem;
+    }
+    .comet{
+        height:0.9rem;
+    }
+    #fire{
+        height: 6rem;
+        margin-top: -6vh;
+        width: 30vw;
+        margin-left: -1vw;
+        visibility: hidden;
+    }
+  }
+
+  @media only screen and (max-width: 400px) {
+    #play_area{
+        height:20vh;
+    }
+
+    #ship{
+        height:1.5rem;
+    }
+    .comet{
+        height:0.8rem;
+    }
+    #fire{
+        height: 5rem;
+        margin-top: -5.5vh;
+        width: 30vw;
+        margin-left: -1vw;
+        visibility: hidden;
+    }
+  }
+ 
+@media only screen and (max-width: 450px) {
+  #scores font{
+        margin-left: 30%;
+  }
+}
+
+  @media only screen and (max-width: 360px) {
+    
+    #control1,#control2{
+        width: 5rem;
+    }
+  }
+
+  @media only screen and (max-width: 250px) {
+    
+    #control1,#control2{
+        width: 3rem;
+    }
+  }
+
+  @media only screen and (max-width: 150px) {
+    
+    #control1,#control2{
+        width: 1rem;
+    }
+  }
+
+  @keyframes animate{ 
+    0%{ 
+      opacity: 0; 
+    } 
+    50%{ 
+      opacity: 0.7; 
+    } 
+    100%{ 
+      opacity: 0; 
+    } 
+  } 
